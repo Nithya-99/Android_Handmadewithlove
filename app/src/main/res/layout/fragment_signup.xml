@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <ImageButton
+            android:id="@+id/signup_cancelBtn"
             android:layout_width="44dp"
             android:layout_height="34dp"
             android:background="@android:color/transparent"
@@ -24,7 +25,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="357dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
@@ -106,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00000000"
-                    android:hint="Enter Password"
+                    android:hint="Enter Password (atleast 8 characters)"
                     android:inputType="textPassword"
                     android:textColor="@android:color/black"
                     android:textColorHint="#70000000" />
@@ -145,8 +146,9 @@
                 android:layout_marginTop="20dp"
                 android:background="#4caf50"
                 android:text="Sign Up"
+                android:enabled="false"
                 android:textAllCaps="false"
-                android:textColor="@android:color/white" />
+                android:textColor="#70ffffff" />
 
             <LinearLayout
                 android:layout_width="match_parent"
