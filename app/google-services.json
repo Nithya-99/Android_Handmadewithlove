@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12973733323",
+    "firebase_url": "https://handmadewithlove-ee854.firebaseio.com",
+    "project_id": "handmadewithlove-ee854",
+    "storage_bucket": "handmadewithlove-ee854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12973733323:android:5e34eb1c692d51ad64324e",
+        "android_client_info": {
+          "package_name": "com.example.handmadewithlove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12973733323-7aoc9pkggjriga9i6r1uqg66p4otbpjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.handmadewithlove",
+            "certificate_hash": "bc3f36f3e4aa0731c7c0ad859b5d3db48ee6c40a"
+          }
+        },
+        {
+          "client_id": "12973733323-c34sq53kjbg5jkljgucevtjid6q2au18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfztBSyH5Aq78BbvtrIhEtbUI9Y_22K7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12973733323-c34sq53kjbg5jkljgucevtjid6q2au18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
