@@ -11,7 +11,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -28,6 +31,10 @@ public class SignupFragment extends Fragment {
     private TextView login_link;
     private FrameLayout parentFramelayout;
 
+    private EditText email, name, password, confirm_password;
+    private ImageButton closeBtn;
+    private Button signupBtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -35,6 +42,10 @@ public class SignupFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_signup, container, false);
         login_link = view.findViewById(R.id.login_link);
         parentFramelayout = getActivity().findViewById(R.id.register_framelayout);
+
+        email = view.findViewById(R.id.signup_email);
+        name = view.findViewById(R.id.signup_name);
+        password = view.findViewById(R.id.signup_pw);
         return view;
     }
 
