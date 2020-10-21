@@ -63,6 +63,7 @@ public class SigninFragment extends Fragment {
         password = view.findViewById(R.id.signin_pw);
 
         forgot_pw = view.findViewById(R.id.signin_forgot_pw);
+
         loginBtn = view.findViewById(R.id.signin_button);
         cancelBtn = view.findViewById(R.id.signin_cancelBtn);
 
@@ -76,6 +77,12 @@ public class SigninFragment extends Fragment {
              @Override
              public void onClick(View view) {
                  setFragment(new SignupFragment());
+             }
+         });
+         forgot_pw.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 setFragment(new ResetPasswordFragment());
              }
          });
 
