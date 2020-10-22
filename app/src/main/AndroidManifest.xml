@@ -11,12 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminAddNewProduct"></activity>
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".AdminAddNewProduct" />
         <activity android:name=".Admin_Panel" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Register" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
