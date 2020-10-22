@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Panel">
+
+    <TextView
+        android:id="@+id/Topheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Add new Products"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear_category_layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Topheader"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/t_necklace"
+            android:layout_width="206dp"
+            android:layout_height="80dp"
+            android:src="@drawable/necklace" />
+
+        <ImageView
+            android:id="@+id/t_earings"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/earings"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layouts"
+        android:orientation="horizontal"
+        android:layout_marginBottom="250dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/t_bangles"
+            android:layout_width="206dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bangles" />
+
+        <ImageView
+            android:id="@+id/t_jewellery_set"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/jewellery_set"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layouts"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/OrderButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Order List"
+            android:textColor="@android:color/white"
+            android:background="@color/green"
+            android:layout_margin="5dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/LogoutButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:background="@color/green"
+            android:layout_margin="5dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
