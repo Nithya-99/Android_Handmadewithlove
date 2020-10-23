@@ -90,6 +90,15 @@ public class SignupFragment extends Fragment {
             }
         });
 
+        closeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainPage = new Intent(getActivity(),Main2Activity.class);
+                startActivity(mainPage);
+                getActivity().finish();
+            }
+        });
+
         email.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {

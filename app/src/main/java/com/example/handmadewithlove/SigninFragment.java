@@ -82,7 +82,17 @@ public class SigninFragment extends Fragment {
          forgot_pw.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
+                 Register.onResetPasswordFragment= true;
                  setFragment(new ResetPasswordFragment());
+             }
+         });
+
+         cancelBtn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent mainPage = new Intent(getActivity(),Main2Activity.class);
+                 startActivity(mainPage);
+                 getActivity().finish();
              }
          });
 
