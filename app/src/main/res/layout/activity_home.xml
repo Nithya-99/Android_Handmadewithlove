@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/first_card"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#CC023657">
+
+            <TextView
+                android:id="@+id/product1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Phones"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/product1_name"
+                android:layout_marginTop="26dp"
+                android:foregroundGravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mobile" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_image"
+                android:layout_marginTop="20dp"
+                android:text="Price = 5000$"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_price"
+                android:layout_marginTop="10dp"
+                android:text="New Mobiles"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_card"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="#CC023657"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Headphones"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/product1_image"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/product_name"
+                android:layout_marginTop="26dp"
+                android:foregroundGravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/headphones" />
+
+            <TextView
+                android:id="@+id/product1_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product1_image"
+                android:layout_marginTop="20dp"
+                android:text="Price = 1000$"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/product1_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product1_price"
+                android:layout_marginTop="10dp"
+                android:text="New Headphones"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
